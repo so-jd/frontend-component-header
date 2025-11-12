@@ -55,8 +55,13 @@ const Header = ({
   const defaultMainMenu = [
     {
       type: 'item',
-      href: `${config.LMS_BASE_URL}/dashboard`,
-      content: intl.formatMessage(messages['header.links.courses']),
+      href: `${config.LMS_BASE_URL}/learning-paths/explore`,
+      content: intl.formatMessage(messages['header.links.explore']),
+    },
+    {
+      type: 'item',
+      href: `${config.LMS_BASE_URL}/learning-paths/`,
+      content: intl.formatMessage(messages['header.links.my.learning']),
     },
   ];
   const defaultUserMenu = authenticatedUser === null ? [] : [{
